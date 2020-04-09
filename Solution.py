@@ -23,7 +23,8 @@ def possibilities(board):
 # Select a random place for the player 
 def random_place(board, player): 
     selection = possibilities(board) 
-    current_loc = random.choice(selection) 
+    current_loc = random.choice(selection)
+    print(current_loc)
     board[current_loc] = player 
     return(board) 
   
@@ -41,7 +42,7 @@ def row_win(board, player):
         if win == True: 
             return(win) 
     return(win) 
-  
+
 # Checks whether the player has three 
 # of their marks in a vertical row 
 def col_win(board, player): 
